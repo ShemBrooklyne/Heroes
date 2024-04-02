@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes CRUD</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Heroes CRUD</h1>
+        <div id="heroesList"></div>
+        <div id="createForm">
+            <h2>Create New Hero</h2>
+            <form id="heroForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="alias">Alias:</label>
+                <input type="text" id="alias" name="alias" required><br>
+                <label for="superPower">Superpower:</label>
+                <input type="text" id="superPower" name="superPower" required><br>
+                <button type="button" onclick="createHero()">Create Hero</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
